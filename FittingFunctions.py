@@ -1,3 +1,4 @@
+from scipy.optimize import curve_fit
 
 """ function to be fitted, annoyingly scipy.curvefit requires a explicit list of parameters as input, (x, p0, p1 , p2),
 whereas scipy.odr requires input in the form of a vector, (P, x) with P = [p0, p1, p2] """
