@@ -1,5 +1,5 @@
-import os
 def get_data( filename,filetype, ignoreLines=0): # I separate filename and filetype, so you can reuse filename list for eg writing legends, without .txt appearing
+    import os   
     XX = []
     YY = []
     n = 0.
