@@ -4,7 +4,7 @@ def PPlot(fig, x, y, Er_y=None, x_label="", y_label="", legName="", setLogY=Fals
     myPlot = fig.add_subplot()
     ## first we do a the basic plot
     if  Er_y is None: 
-        myPlot.plot(x, y, label=legName) ##makes plot without errorbars
+        myPlot.plot(x, y, linestyle=None, label=legName) ##makes plot without errorbars
 
     elif Er_y is not None: ## errorsbars on Y but not on X
         myPlot.errorbar(x, y, yerr=Er_y, fmt="o", label=legName, markersize=1, capsize=2., markerfacecolor="black", markeredgecolor="black") ##makes errorbar point plot
