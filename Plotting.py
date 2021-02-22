@@ -17,5 +17,7 @@ def PPlot(fig, x, y, Er_y=None, x_label="", y_label="", legName="", setLogY=Fals
         myPlot.set_yscale('log') #### Logarithmic
 
     myPlot.legend(fontsize=13)
+    myPlot.xaxis.set_major_locator(MultipleLocator(100))
+    myPlot.xaxis.set_minor_locator(AutoMinorLocator(2))
     
     return myPlot
