@@ -1,3 +1,5 @@
+from matplotlib.ticker import (AutoMinorLocator, MultipleLocator)
+
 
 def PPlot(fig, x, y, Er_y=None, x_label="", y_label="", legName="", setLogY=False): #setting a default value of the input noFIt to False
     
