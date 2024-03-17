@@ -6,7 +6,7 @@ def get_data( filename,filetype, ignoreLines=0): # I separate filename and filet
     n = 0.
     getBinsNext = False
     Nbins = 0
-    filepath = os.path.join(os.getcwd(), "data", filename + filetype)
+    filepath = os.path.join(os.getcwd(), "data2", filename + filetype)
     startN = 9999999 
     """# Allows data to be put in separate subfolder from the script,
     # os.getcwd makes it works across different operating systems"""
